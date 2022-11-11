@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TallerSemana6.VentanaActualizacion">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Ventana de actualización / eliminación" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="código" FontSize="Medium" Grid.Row="0" Grid.Column="0" ></Label>
+                <Entry IsEnabled="False" x:Name="txtCodigo" Placeholder="Código" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"></Entry>
+                <Label Text="Ingrese el nombre" FontSize="Medium" Grid.Row="1" Grid.Column="0" ></Label>
+                <Entry x:Name="txtNombre" Placeholder="Nombre" Keyboard="Text" Grid.Row="1" Grid.Column="1"></Entry>
+                <Label Text="Ingrese el apellido" FontSize="Medium" Grid.Row="2" Grid.Column="0" ></Label>
+                <Entry x:Name="txtApellido" Placeholder="Apellido" Keyboard="Text" Grid.Row="2" Grid.Column="1"></Entry>
+                <Label Text="Ingrese la edad" FontSize="Medium" Grid.Row="3" Grid.Column="0" ></Label>
+                <Entry x:Name="txtEdad" Placeholder="Edad" Keyboard="Numeric" Grid.Row="3" Grid.Column="1"></Entry>
+
+                <Button x:Name="btnActualizar" Text="ACTUALIZAR" Clicked="btnActualizar_Clicked" Grid.Row="4" Grid.Column="0" BackgroundColor="DodgerBlue"></Button>
+                <Button x:Name="btnEliminar" Text="ELIMINAR" Clicked="btnEliminar_Clicked" Grid.Row="4" Grid.Column="1" BackgroundColor="DarkOrange"></Button>
+                <Button x:Name="btnRegresar" Text="REGRESAR" Clicked="btnRegresar_Clicked" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" ></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
